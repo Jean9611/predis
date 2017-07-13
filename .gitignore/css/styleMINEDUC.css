@@ -1,0 +1,89 @@
+
+	header {
+	    height:50px;
+	    background:blue;
+	    font-size: 16px;
+	}	
+
+	body {
+	    font-size: 16px;
+	}
+
+	label {
+	    font-size: 16px;
+	}
+
+	select {
+	    font-size: 14px;
+	    width: 214px;
+	    height: 23px;
+	}
+
+	footer {
+		font-size: 16px;
+	    height:50px;
+	    color:blue;
+	    border-top-width: 1px;
+	    border-top-style: solid;
+	    border-top-color: blue;
+	}
+
+	#header2 {
+	    background-color: lightblue;
+	}
+
+	button {
+	  	display: inline-block;
+		width: 210px;
+		height: 32px;
+		font-size: 18px;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		outline: none;
+		color: #fff;
+		background-color: blue;
+		border: none;
+		border-radius: 10px;
+	}
+
+	button:hover {
+		background-color: #02116F
+	}
+
+	button:active {
+	  background-color: #02116F;
+	  transform: translateY(4px);
+	}
+
+	#prueba {
+	    background-color: blue; /* Green */
+	    border: none;
+	    color: white;
+	    width: 50px;
+	    height: 50px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 30px;
+	}
+
+
+
+	#menubtn {
+		width: 300px;
+		height: 45px;
+	}
+
+
+	input {
+	    width: 210px;
+	    height: 20px;
+	    font-size: 14px;
+	}
+
+	input[type="checkbox"]{ 
+		width: 18px;
+	    height: 18px; 
+		line-height: 28px; 
+	}
