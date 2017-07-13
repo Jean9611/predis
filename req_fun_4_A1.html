@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Requisito Funcional 11</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/styleMINEDUC.css">
+  	<link rel="stylesheet" href="css/jquery-ui.css">
+	<!--link rel="stylesheet" href="/resources/demos/style.css"-->
+  	<script src="js/jquery-1.12.4.js"></script>
+  	<script src="js/jquery-ui.js"></script>
+	<script src="js/script.js"></script>
+  <script>
+  $(function() {
+    $("#datepicker1").datepicker();
+    $("#datepicker2").datepicker();
+    $("#datepicker3").datepicker();
+    $("#datepicker4").datepicker();
+    $("#datepicker5").datepicker();
+    $("#datepicker6").datepicker();
+    $("#datepicker7").datepicker();
+    $("#datepicker8").datepicker();
+    $("#datepicker9").datepicker();
+	});
+  </script>
+
+</head>
+<body>
+	<header>
+		<br/><br/>
+		<div id = "header2"><p>proceso de acreditación y certificación de centros educativos</p></div>
+	</header>
+	<br/><br/>
+	<button id= "prueba" onclick="reDirect('menu.html')"><</button>
+	<div align="center">
+		<b>Definir evento de AYCCE</b><br/>
+		<!--form action="/my-handling-form-page" method="post"-->
+			<table style="width:45%">
+			  <tr>
+			    <td>Directrices a utilizar: </td>
+			    <td>
+			    	<select onchange="cargar_datos_req_fun_4_A1()">
+					  <option value="">Seleccione una Directriz</option>
+					  <option value="">Directriz 1</option>
+					  <option value="">Directriz 2</option>
+					  <option value="">Directriz 3</option>
+					</select>
+				</td> 
+			  </tr>
+			  <tr>
+			    <td>Tipo de certificación:</td>
+			    <td>Certificación <input type="checkbox"> Recertificación <input type="checkbox"></td> 
+			  </tr>
+			  <tr>
+			    <td>Número de recertificación:</td>
+			    <td><input type="number" id="name" /></td> 
+			  </tr>
+			  <tr>
+			    <td>Código del evento:</td>
+			    <td><label id="codigo" style="color:blue"></label></td> 
+			  </tr>
+			</table>
+			<br/>
+			<b style="color:blue">Calendario de Actividades</b>
+			<p>Ingrese las fechas para las siguientes activicades</p>
+			<table style="width:45%">
+			  <tr>
+			    <td>1. Envío de convocatoria:</td>
+			    <td><input type="text" id="datepicker1"></td> 
+			  </tr>
+			  <tr>
+			    <td>2. Habilitar el sistema para recepción de solicitudes:</td>
+			    <td><input type="text" id="datepicker2"></td> 
+			  </tr>
+			  <tr>
+			    <td>3. Deshabilitar el sistema para recepción solicitudes:</td>
+			    <td><input type="text" id="datepicker3"></td> 
+			  </tr>
+			  <tr>
+			    <td>4. Inicio de desarrollo del taller 1:</td>
+			    <td><input type="text" id="datepicker4"></td> 
+			  </tr>
+			  <tr>
+			    <td>5. Finalización de desarrollo del taller 1:</td>
+			    <td><input type="text" id="datepicker5"></td> 
+			  </tr>
+			  <tr>
+			    <td>6. Inicio de desarrollo del taller 2:</td>
+			    <td><input type="text" id="datepicker6"></td> 
+			  </tr>
+			  <tr>
+			    <td>7. Finalización de desarrollo del taller 2:</td>
+			    <td><input type="text" id="datepicker7"></td> 
+			  </tr>
+			  <tr>
+			    <td>8. Fecha de envío de mensaje, indicando que se<br/>
+					debe iniciar con la implementación del SIGC:</td>
+			    <td><input type="text" id="datepicker8"></td> 
+			  </tr>
+			  <tr>
+			    <td>9. Fecha de envío de mensaje indicando el inicio<br/>
+					de la fase de evaluación:</td>
+			    <td><input type="text" id="datepicker9"></td> 
+			  </tr>
+			  <tr>
+			    <td><br/></td><td></td>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td>
+			    	<button onclick="mostrarMensaje('Recordatorios para participación en el taller, enviados')">Guardar</button>
+				</td> 
+			  </tr>
+			</table>
+		<!--/form-->
+	</div>
+	<br/><br/><br/><br/>
+	<footer>
+	  <p>2008, Ministerio de Educación de Guatemala</p>
+	  <p>6a. Calle 1-87 zona 10, Guatemala, C.A. </p>
+	  <p>Teléfono: (502) 2411-9595</p>
+	</footer>
+</body>
+</html>
