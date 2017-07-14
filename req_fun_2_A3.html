@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Requisito Funcional #</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/styleMINEDUC.css">
+  	<link rel="stylesheet" href="css/jquery-ui.css">
+	<!--link rel="stylesheet" href="/resources/demos/style.css"-->
+  	<script src="js/jquery-1.12.4.js"></script>
+  	<script src="js/jquery-ui.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+	  $(function() {
+	    $("#datepicker").datepicker();
+		});
+	  </script>
+</head>
+<body>
+	<header>
+		<br/><br/>	
+		<div id = "header2"><p>proceso de acreditación y certificación de centros educativos</p></div>
+	</header>
+	<br/><br/><br/>
+	<button id= "prueba" onclick="reDirect('req_fun_2.html')"><</button>
+	<div align="center">
+		<b>Eliminar directrices y criterios</b><br/><br/><br/>
+		<!--form action="/my-handling-form-page" method="post"-->
+			<table style="width:40%">
+			  <tr>
+			    <td>Grupo al que pertenece:</td>
+			    <td><input type="text"/></td> 
+			  </tr>
+			  <tr>
+			    <td>Correlativo dentro del Grupo:</td>
+			    <td><input type="text" onchange="cargar_datos_req_fun_2_A2()"/></td> 
+			  </tr>
+			  <tr>
+			    <td>Nombre de la Directriz:</td>
+			    <td><input type="text" id="nombre"/></td> 
+			  </tr>
+			  <tr>
+			    <td>Definición:</td>
+			    <td><textarea rows="4" cols="24" id="def"></textarea></td> 
+			  </tr>
+			  <tr>
+			  <tr>
+			    <td>Criterios:</td>
+			    <td>
+			    	Criterio1, Criterio2, Criteriox
+				</td>
+			  <tr>
+			    <td><br/></td><td></td>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td>
+			    	<button onclick="mostrarMensajeConfirmacion2('Seguro que quieres eliminar esta directriz?','Directriz eliminado')">Eliminar Directriz</button>
+				</td> 
+			  </tr>
+			</table>
+		<!--/form-->
+	</div>
+	<br/><br/><br/>
+	<footer>
+	  <p>2008, Ministerio de Educación de Guatemala</p>
+	  <p>6a. Calle 1-87 zona 10, Guatemala, C.A. </p>
+	  <p>Teléfono: (502) 2411-9595</p>
+	</footer>
+</body>
+</html>

@@ -68,6 +68,10 @@
 	    font-size: 30px;
 	}
 
+	#minibtn {
+	    background-color: red;
+		width: 100px;
+	}
 
 
 	#menubtn {

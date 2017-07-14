@@ -32,31 +32,12 @@
 	<br/><br/>
 	<button id= "prueba" onclick="reDirect('menu.html')"><</button>
 	<div align="center">
-		<b>Definir evento de AYCCE</b><br/>
+		<b>Modificar Evento de AYCCE</b><br/>
 		<!--form action="/my-handling-form-page" method="post"-->
 			<table style="width:45%">
 			  <tr>
-			    <td>Directrices a utilizar: </td>
-			    <td>
-			    	<select onchange="cargar_datos_req_fun_4_A1()">
-					  <option value="">Seleccione una Directriz</option>
-					  <option value="">Directriz 1</option>
-					  <option value="">Directriz 2</option>
-					  <option value="">Directriz 3</option>
-					</select>
-				</td> 
-			  </tr>
-			  <tr>
-			    <td>Tipo de certificación:</td>
-			    <td>Certificación <input type="checkbox"> Recertificación <input type="checkbox"></td> 
-			  </tr>
-			  <tr>
-			    <td>Número de recertificación:</td>
-			    <td><input type="number" id="name" /></td> 
-			  </tr>
-			  <tr>
 			    <td>Código del evento:</td>
-			    <td><label id="codigo" style="color:blue"></label></td> 
+			    <td><input type="text" id="name" onchange="cargar_datos_req_fun_4_A2()"/></td>
 			  </tr>
 			</table>
 			<br/>
@@ -107,7 +88,7 @@
 			  <tr>
 			    <td></td>
 			    <td>
-			    	<button onclick="mostrarMensaje('Evento creado, código AYCCE-00001-2017')">Guardar</button>
+			    	<button onclick="mostrarMensaje('Cambios realizados')">Guardar</button>
 				</td> 
 			  </tr>
 			</table>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Requisito Funcional #</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/styleMINEDUC.css">
+  	<link rel="stylesheet" href="css/jquery-ui.css">
+	<!--link rel="stylesheet" href="/resources/demos/style.css"-->
+  	<script src="js/jquery-1.12.4.js"></script>
+  	<script src="js/jquery-ui.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+	  $(function() {
+	    $("#datepicker").datepicker();
+		});
+	  </script>
+</head>
+<body>
+	<header>
+		<br/><br/>	
+		<div id = "header2"><p>proceso de acreditación y certificación de centros educativos</p></div>
+	</header>
+	<br/><br/><br/>
+	<button id= "prueba" onclick="reDirect('req_fun_2.html')"><</button>
+	<div align="center">
+		<b>Modificar directrices y criterios</b><br/><br/><br/>
+		<!--form action="/my-handling-form-page" method="post"-->
+			<table style="width:55%">
+			  <tr>
+			    <td>Grupo al que pertenece:</td>
+			    <td><input type="text"/></td> 
+			  </tr>
+			  <tr>
+			    <td>Correlativo dentro del Grupo:</td>
+			    <td><input type="text" onchange="cargar_datos_req_fun_2_A2()"/></td> 
+			  </tr>
+			  <tr>
+			    <td>Nombre de la Directriz:</td>
+			    <td><input type="text" id="nombre"/></td> 
+			  </tr>
+			  <tr>
+			    <td>Definición:</td>
+			    <td><textarea rows="4" cols="24" id="def"></textarea></td> 
+			  </tr>
+			  <tr>
+			  <tr>
+			    <td>Criterios:</td>
+			    <td>
+			    	<select onchange="cargar_datos_req_fun_2_A22()">
+					  <option value="">Seleccione un criterio</option>
+					  <option value="">Criterio 1</option>
+					  <option value="">Criterio 2</option>
+					  <option value="">Criterio 3</option>
+					</select>
+				</td> 
+				<td><button id="minibtn" onclick="mostrarMensajeConfirmacion2('Seguro que quieres eliminar este criterio?','Criterio eliminado')">Eliminar</button></td>
+			  </tr>
+			    <td></td>
+			    <td>
+			    	<button onclick="habilitar()">Agregar Criterio</button>
+				</td> 
+			  </tr><tr><td><br/></td></tr>
+			  <tr>
+			    <td>Descripción del Criterio:</td>
+			    <td><input type="text" id="input1" disabled/></td> 
+			  </tr>
+			  <tr>
+			    <td>Redacción del criterio como hallazgo positivo:</td>
+			    <td><input type="text" id="input2" disabled/></td> 
+			  </tr>
+			  <tr>
+			    <td>Redacción del criterio como oportunidad de mejora:</td>
+			    <td><input type="text" id="input3" disabled/></td> 
+			  </tr>
+			  <tr>
+			    <td><br/></td><td></td>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td>
+			    	<button onclick="mostrarMensaje('Directriz Guardada con Exito')">Guardar</button>
+				</td> 
+			  </tr>
+			</table>
+		<!--/form-->
+	</div>
+	<br/><br/><br/>
+	<footer>
+	  <p>2008, Ministerio de Educación de Guatemala</p>
+	  <p>6a. Calle 1-87 zona 10, Guatemala, C.A. </p>
+	  <p>Teléfono: (502) 2411-9595</p>
+	</footer>
+</body>
+</html>

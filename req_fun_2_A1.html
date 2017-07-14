@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Requisito Funcional #</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/styleMINEDUC.css">
+  	<link rel="stylesheet" href="css/jquery-ui.css">
+	<!--link rel="stylesheet" href="/resources/demos/style.css"-->
+  	<script src="js/jquery-1.12.4.js"></script>
+  	<script src="js/jquery-ui.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+	  $(function() {
+	    $("#datepicker").datepicker();
+		});
+	  </script>
+</head>
+<body>
+	<header>
+		<br/><br/>	
+		<div id = "header2"><p>proceso de acreditación y certificación de centros educativos</p></div>
+	</header>
+	<br/><br/><br/>
+	<button id= "prueba" onclick="reDirect('req_fun_2.html')"><</button>
+	<div align="center">
+		<b>Definir directrices y criterios</b><br/><br/><br/>
+		<!--form action="/my-handling-form-page" method="post"-->
+			<table style="width:40%">
+			  <tr>
+			    <td>Nombre de la Directriz:</td>
+			    <td><input type="text"/></td> 
+			  </tr>
+			  <tr>
+			    <td>Definición:</td>
+			    <td><textarea rows="4" cols="24"></textarea></td> 
+			  </tr>
+			  <tr>
+			    <td>Grupo al que pertenece:</td>
+			    <td><input type="text"/></td> 
+			  </tr>
+			  <tr>
+			    <td>Correlativo dentro del Grupo:</td>
+			    <td><input type="text"/></td> 
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td>
+			    	<button onclick="habilitar()">Agregar Criterio</button>
+				</td> 
+			  </tr><tr><td><br/></td></tr>
+			  <tr>
+			    <td>Descripción del Criterio:</td>
+			    <td><input type="text" id="input1" disabled/></td> 
+			  </tr>
+			  <tr>
+			    <td>Redacción del criterio como hallazgo positivo:</td>
+			    <td><input type="text" id="input2" disabled/></td> 
+			  </tr>
+			  <tr>
+			    <td>Redacción del criterio como oportunidad de mejora:</td>
+			    <td><input type="text" id="input3" disabled/></td> 
+			  </tr>
+			  <tr>
+			    <td><br/></td><td></td>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td>
+			    	<button onclick="mostrarMensaje('Directriz Guardada con Exito')">Guardar</button>
+				</td> 
+			  </tr>
+			</table>
+		<!--/form-->
+	</div>
+	<br/><br/><br/>
+	<footer>
+	  <p>2008, Ministerio de Educación de Guatemala</p>
+	  <p>6a. Calle 1-87 zona 10, Guatemala, C.A. </p>
+	  <p>Teléfono: (502) 2411-9595</p>
+	</footer>
+</body>
+</html>
