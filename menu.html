@@ -2,6 +2,48 @@
 <html>
 <head>
 	<title>Menú</title>
+	<style type="text/css">
+					
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+				}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			
+		</style>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/styleMINEDUC.css">
   	<link rel="stylesheet" href="css/jquery-ui.css">
@@ -11,130 +53,89 @@
 	<script src="js/script.js"></script>
 </head>
 <body>
-	<header>
-		<br/><br/>	
-		<div id = "header2"><p>proceso de acreditación y certificación de centros educativos</p></div>
-	</header>
-	<br/><br/><br/>
+	<header></header>
 	<div align="center">
-		<b>Menú</b><br/><br/><br/>
 		<!--form action="/my-handling-form-page" method="post"-->
 			<table style="width:100%">
 			  <tr>
-			    <th align="center">Set de botones 1 (RF1 - RF3):</th>
-			    <th align="center">Set de botones 2 (RF6 - RF13):</th>
-			    <th align="center">Set de botones 3 (RF14 - RF23):</th>
-			    <th align="center">Set de botones 4 (RF26 - RF32):</th>
-			  </tr>
-			  <tr>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_1.html')">Registro de invitados</button>
-			    </td>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_6.html')">Registro de Firmantes</button>
-			    </td>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_14.html')">pendientes RF14</button>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_26.html')">pendiente RF26</button>
-			    </td>
-			  </tr>
-			  <tr>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_2.html')">Definir directrices y criterios</button>
-			    </td>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_7.html')">pendiente RF7</button>
-			    </td>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_18.html')">pendientes RF18</button>
-			    </td>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_27.html')">pendiente RF27</button>
-			    </td>
-			  </tr>
-			  <tr>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_3.html')">pendiente RF3</button>
-			    </td>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_8.html')">Planificar Tallerres</button>
-			    </td>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_19.html')">pendientes RF19</button>
-			    </td>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_28.html')">pendiente RF28</button>
-			    </td>
-			  </tr>
-			  <tr>
-			    <th align="center">Eventos (RF4 y RF5):</th>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_10.html')">Revisar solicitud</button>
-			    </td>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_20.html')">pendientes RF20</button>
-			    </td>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_29.html')">pendientes RF29</button>
-			    </td>
-			  </tr>
-			  <tr>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_4_A1.html')">Definir Evento de AYCCE</button>
-			    </td>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_11.html')">Envio de recordatorio para participar en taller</button>
-			    </td>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_21.html')">pendiente RF21</button>
-			    </td>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_30.html')">pendientes RF30</button>
-			    </td>
-			  </tr>
-			  <tr>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_4_A2.html')">Modificar Evento</button>
-			    </td>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_12.html')">pendiente RF12</button>
-			    </td>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_22.html')">pendiente RF22</button>
-			    </td>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_32.html')">pendientes RF32</button>
-			    </td>
-			  </tr>
-			  <tr>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_4_A3.html')">Eliminar Evento</button>
-			    </td>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_13.html')">Registrar apoyo particular por ausencia a taller</button>
-			    </td>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_23.html')">pendientes RF23</button>
-			    </td>
-			    <td>
-			    </td>
-			  </tr>
-			  <tr>
-			    <td>
-			    <button  id="menubtn" onclick="reDirect('req_fun_5.html')">Cambiar Estado de Evento</button>
-			    </td>
-			    <td>
-			    </td>
-			    <td>
-			    </td>
-			    <td>
-			    </td>
-			  </tr>
+			  <td>
+				   <ul class="nav">
+						<li><button  id="menubtn" onclick="">Administración</button>
+							<ul>
+								<li> <button  id="subbtn" onclick="reDirect('req_fun_1.html')">Registro de invitados</button></li>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_2.html')">Definir directrices y criterios</button></li>
+								<li> <button  id="subbtn" onclick="reDirect('req_fun_3.html')">Definir requisitos para eventos*</button></li>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_4_A1.html')">Definir Evento de AYCCE</button></li>
+								<li><button id="subbtn" onclick="reDirect('req_fun_5.html')">Cambiar Estado de Evento</button></li>
+								<li> <button  id="subbtn" onclick="reDirect('req_fun_6.html')">Registro de Firmantes</button></li>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_7.html')">Registrar técnicos y administradores</button></li>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_20.html')">Registro de técnicos evaluadores</button></li>
+								<li> <button  id="subbtn" onclick="reDirect('req_fun_30.html')">Anular, suspender o reactivar certificación</button></li>
+							</ul>
+						</li>
+						<li><button  id="menubtn" onclick="reDirect('req_fun_10.html')">Revisar solicitud *</button>
+						</li>
+						<li><button  id="menubtn" onclick="">Talleres</button>
+							<ul>
+								<li> <button  id="subbtn" onclick="reDirect('req_fun_8.html')">Planificar Tallerres</button></li>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_11.html')">Recordatorio para participar en taller</button></li>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_12.html')">Registrar participación en taller</button></li>
+								<li> <button  id="subbtn" onclick="reDirect('req_fun_13.html')">Registrar apoyo particular por ausencia a taller</button></li>
+							</ul>
+						</li>
+						<li><button  id="menubtn" onclick="reDirect('req_fun_18.html')">Plan de mejora *</button>
+						</li>
+						<li><button  id="menubtn" onclick="reDirect('req_fun_19.html')">Mensaje de avance</button>
+						</li>
+						<li><button  id="menubtn" onclick="">Evaluación</button>
+							<ul>
+								<li> <button  id="subbtn" onclick="reDirect('req_fun_21.html')">Programar visita de evaluación</button></li>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_23.html')">Reprogramar visita de evaluación</button></li>
+							</ul>
+						</li>
+						<li> <button  id="menubtn" onclick="reDirect('req_fun_26.html')">Analizar evaluación *</button>
+						</li>
+						<li><button  id="menubtn" onclick="">Documentos</button>
+							<ul>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_27.html')">Emitir resolución *</button></li>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_28.html')">Registrar resolución firmada *</button></li>
+								<li> <button  id="subbtn" onclick="reDirect('req_fun_29.html')">Generar certificado *</button></li>
+							</ul>
+						</li>
+						<li><button  id="menubtn" onclick="reDirect('req_fun_22.html')">Entregar documentación *</button>
+						</li>
+						<li><button id="menubtn" onclick="">Reportes </button>
+							<ul>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_14.html')">Directrices del SGIC</button></li>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_14.html')">Criterios críticos por certificación</button></li>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_14.html')">Registro de evento de AYCCE</button></li>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_14.html')">Técnicos</button></li>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_14.html')">Talleres</button></li>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_14.html')">Diagnóstico y plan de mejora</button></li>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_14.html')">Centros Educativos por estado</button></li>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_14.html')">Avance del proceso</button></li>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_14.html')">Técnicos evaluadores</button></li>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_14.html')">Programación de visitas</button></li>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_14.html')">Reporte general del proceso</button></li>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_14.html')">Informe general del proceso</button></li>
+								<li><button  id="subbtn" onclick="reDirect('req_fun_14.html')">Reimpresión de documentos</button></li>
+							</ul>	
+						</li>
+						<li><button  id="menubtn" onclick="reDirect('req_fun_32.html')">Información general *</button>
+						</li>
+					</ul>
+				</td>
+			  </tr>			 
+			<!--  
+			<button  id="menubtn" onclick="reDirect('req_fun_4_A2.html')">Modificar Evento</button>	
+			<button  id="menubtn" onclick="reDirect('req_fun_4_A3.html')">Eliminar Evento</button>
+			-->
 			</table>
+			<br/><br/><br/>
+			<img src="css/images/escudo.png" height="350px">
 		<!--/form-->
 	</div>
-	<br/><br/><br/><br/>
+	<br/><br/><br/>
 	<footer>
 	  <p>2008, Ministerio de Educación de Guatemala</p>
 	  <p>6a. Calle 1-87 zona 10, Guatemala, C.A. </p>

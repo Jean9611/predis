@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Requisito Funcional 7</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/styleMINEDUC.css">
+  	<link rel="stylesheet" href="css/jquery-ui.css">
+	<!--link rel="stylesheet" href="/resources/demos/style.css"-->
+  	<script src="js/jquery-1.12.4.js"></script>
+  	<script src="js/jquery-ui.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<header>
+	</header>
+	<br/><br/>
+	<button id= "prueba" onclick="reDirect('req_fun_7.html')"><</button>
+	<div align="center">
+		<b>Modificación de Evaluadores</b><br/><br/><br/>
+		<!--form action="/my-handling-form-page" method="post"-->
+			<table style="width:35%">
+			  <tr>
+			    <td>Código o DPI:</td>
+			    <td><input type="number" id="codigo" onchange="cargar_datos_req_fun_20_A2()"/></td> 
+			  </tr>
+			  <tr>
+			    <td>Nombre:</td>
+			    <td><input type="text" id="nombre" disabled="true" /></td> 
+			  </tr>
+			  <tr>
+			    <td>CUI:</td>
+			    <td><input type="text" id="cui" disabled="true" /></td> 
+			  </tr>
+			  <tr>
+			    <td>Celular:</td>
+			    <td><input type="number" id="cel" disabled="true"/></td> 
+			  </tr>
+			  <tr>
+			    <td>Correo Institucional:</td>
+			    <td><input type="text" id="correo" disabled="true"/></td> 
+			  </tr>
+			  <tr>
+			    <td>Departamento Asignado:</td>
+			    <td>
+			    	<select id="depto" disabled="true">
+					  <option value="">Seleccione un departamento</option>
+					  <option value="">Departamento 1</option>
+					  <option value="">Departamento 2</option>
+					  <option value="">Departamento 3</option>
+					  <option value="">Departamento 4</option>
+					</select>
+				</td> 
+			  </tr>
+			  <tr>
+			    <td><br/></td><td></td>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td>
+			    	<button onclick="mostrarMensaje('Datos del Técnico actualizados')">Guardar Datos</button>
+				</td> 
+			  </tr>
+			</table>
+		<!--/form-->
+	</div>
+	<br/><br/><br/><br/>
+	<footer>
+	  <p>2008, Ministerio de Educación de Guatemala</p>
+	  <p>6a. Calle 1-87 zona 10, Guatemala, C.A. </p>
+	  <p>Teléfono: (502) 2411-9595</p>
+	</footer>
+</body>
+</html>
