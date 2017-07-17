@@ -26,38 +26,69 @@
 			<table style="width:55%">
 			  <tr>
 			    <td>Grupo al que pertenece:</td>
-			    <td><input type="text"/></td> 
+			    <td>
+			    <td>
+			    	<select>
+					  <option value="">Seleccione un grupo</option>
+					  <option value="">Grupo 1</option>
+					  <option value="">Grupo 2</option>
+					  <option value="">Grupo 3</option>
+					</select>
+				</td> 
+				</td> 
 			  </tr>
 			  <tr>
 			    <td>Correlativo dentro del Grupo:</td>
-			    <td><input type="text" onchange="cargar_datos_req_fun_2_A2()"/></td> 
+			    <td>
+			    <td>
+			    	<select onchange="cargar_datos_req_fun_2_A2()">
+					  <option value="">Seleccione un grupo</option>
+					  <option value="">Grupo 1</option>
+					  <option value="">Grupo 2</option>
+					  <option value="">Grupo 3</option>
+					</select>
+				</td> 
+				</td> 
 			  </tr>
 			  <tr>
 			    <td>Nombre de la Directriz:</td>
-			    <td><input type="text" id="nombre"/></td> 
+			    <td><input type="text" id="nombre" disabled="true" /></td> 
 			  </tr>
 			  <tr>
 			    <td>Definición:</td>
-			    <td><textarea rows="4" cols="24" id="def"></textarea></td> 
+			    <td><textarea rows="4" cols="24" id="def" disabled="true"></textarea></td> 
 			  </tr>
-			  <tr>
-			  <tr>
-			    <td>Criterios:</td>
-			    <td>
-			    	<select onchange="cargar_datos_req_fun_2_A22()">
-					  <option value="">Seleccione un criterio</option>
-					  <option value="">Criterio 1</option>
-					  <option value="">Criterio 2</option>
-					  <option value="">Criterio 3</option>
-					</select>
-				</td> 
-				<td><button id="minibtn" onclick="mostrarMensajeConfirmacion2('Seguro que quieres eliminar este criterio?','Criterio eliminado')">Eliminar</button></td>
-			  </tr>
-			    <td></td>
-			    <td>
-			    	<button onclick="habilitar()">Agregar Criterio</button>
-				</td> 
-			  </tr><tr><td><br/></td></tr>
+			</table>
+			<button onclick="">Aceptar</button>
+			<table style="width:48%" border="2px">
+				<tr style="background-color:#E6E6FA;" text-align="center">
+				  	<td>Criterios</td>
+				  	<td></td>
+				  </tr>
+				  <tr>
+					  	<td>a.  Cuenta con un procedimiento para la administración del Sistema de Garantía Interna de la Calidad implementado y en continua mejora.
+					  	</td>
+					  	<td>
+
+					  	</td>
+				  </tr>
+				  <tr>
+					  	<td>b.  Existe un equipo de administración del sistema que gestiona la calidad formado por representantes de la comunidad educativa.
+					  	</td>
+					  	<td>
+
+					  	</td>
+				  </tr>
+				   <tr>
+					  	<td>c.  Evalúa constantemente el Sistema de Garantía Interna de la Calidad y hace mejoras al mismo.
+					  	</td>
+					  	<td>a
+					  	
+					  	</td>
+				  </tr>
+				  
+				</table>
+			<table>
 			  <tr>
 			    <td>Descripción del Criterio:</td>
 			    <td><input type="text" id="input1" disabled/></td> 

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Requisito Funcional 10</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/styleMINEDUC.css">
+  	<link rel="stylesheet" href="css/jquery-ui.css">
+	<!--link rel="stylesheet" href="/resources/demos/style.css"-->
+  	<script src="js/jquery-1.12.4.js"></script>
+  	<script src="js/jquery-ui.js"></script>
+	<script src="js/script.js"></script>
+  <script>
+  $(function() {
+    $("#datepicker").datepicker();
+	});
+  </script>
+
+</head>
+<body>
+	<header>
+	</header>
+	<br/><br/>
+	<button id= "prueba" onclick="reDirect('req_fun_10.html')"><</button>
+	<div align="center">
+		<b>Revisar solicitud y carta compromiso</b><br/><br/>
+		<!--form action="/my-handling-form-page" method="post"-->
+			<table style="width:45%">
+			 <tr >
+			    <td >a. Nombre del centro educativo:</td> 
+			    <td style="color:blue;">nombre del centro educativo</td>  
+			  </tr>
+			   <tr >
+			    <td >b. Departamento:</td> 
+			    <td style="color:blue;">Departamento</td> 
+			  </tr>
+			   <tr >
+			   <td >b. Municipio:</td> 
+			   <td style="color:blue;">Municipio</td>  
+			  </tr>
+			  <tr >
+			   <td >c. Dirección del centro educativo:</td> 
+			   <td style="color:blue;">Direccion del centro educativo</td>  
+			  </tr> 
+			</table>
+			<br/><br/><b>Detalles de los servicios que presta el centro </b><br/><br/>
+			<table style="width:40%" border="2px">
+			<tr style="background-color:#E6E6FA;" align="center">
+			    <td >Código del  CE</td> 
+			    <td >Nivel </td>
+			    <td >Jornada </td>
+			    <td >Plan</td>
+			    <td >Director</td>  
+			</tr>
+			<tr align="center">
+			    <td >001</td> 
+			    <td >Nivel </td>
+			    <td >Matutina </td>
+			    <td >Diario</td>
+			    <td >Nombre del director</td> 
+			</tr>
+			<tr align="center">
+			    <td >005</td> 
+			    <td >Nivel </td>
+			    <td >Matutina </td>
+			    <td >Diario</td>
+			    <td >Nombre del director</td> 
+			</tr>
+			<tr align="center">
+			    <td >003</td> 
+			    <td >Nivel </td>
+			    <td >Matutina </td>
+			    <td >Diario</td>
+			    <td >Nombre del director</td> 
+			</tr>
+			<tr align="center">
+			    <td >009</td> 
+			    <td >Nivel </td>
+			    <td >Matutina </td>
+			    <td >Diario</td>
+			    <td >Nombre del director</td> 
+			</tr>
+			</table>
+			<br/><br/>
+			<table style="width:50%">
+			 <tr >
+			    <td >1. Nombre de la persona que llenó la solicitud:</td> 
+			    <td style="color:blue;">nombre de la persona que llenó la solicitud</td>  
+			  </tr>
+			   <tr >
+			    <td >2. No. de CUI del DPI:</td> 
+			    <td style="color:blue;">No. De CUI del DPI</td> 
+			  </tr>
+			   <tr >
+			   <td >3. Puesto o cargo:</td> 
+			   <td style="color:blue;">Puesto o cargo</td>  
+			  </tr>
+			  <tr >
+			   <td >4. Nombre de la autoridad máxima de la institución:</td> 
+			   <td style="color:blue;">nombre de la autoridad máxima de la institución</td>  
+			  </tr> 
+			   <td >5. Puesto o cargo:</td> 
+			   <td style="color:blue;">Puesto o cargo</td>  
+			  </tr>
+			   <tr >
+			   <td >6. Email de la institución educativa:</td> 
+			   <td style="color:blue;">Email de la institución educativa</td>  
+			  </tr> 
+			   <tr >
+			   <td >7. Teléfono de la institución educativa:</td> 
+			   <td style="color:blue;">teléfono de la institución educativa</td>  
+			  </tr> 
+			  <tr >
+			   <td >8. Nombre del responsable técnico y enlaces: </td> 
+			   <td style="color:blue;">nombre del responsable técnico y enlaces</td>  
+			  </tr> 
+			  <tr >
+			   <td >9. Cargo del responsable técnico: </td> 
+			   <td style="color:blue;">cargo del responsable técnico</td>  
+			  </tr> 
+			  <tr >
+			   <td >10. Email del responsable técnico:  </td> 
+			   <td style="color:blue;">email del responsable técnico</td>  
+			  </tr> 
+			   <tr >
+			   <td >10. Email del responsable técnico:  </td> 
+			   <td style="color:blue;">email del responsable técnico</td>  
+			  </tr>
+			  <tr> 
+			   <td >13. Informes: </td> 
+			   <td > <select id="informes" onchange="">
+					  <option value="">Seleccione un informe</option>
+					  <option value="">Informe año 1</option>
+					  <option value="">Informe año 2</option>
+					  <option value="">Informe año 3 </option>
+					  <option value="">Informe año 4</option>
+					  
+					</select></td>  
+			  </tr> 
+			  <tr> 
+			   <td ><button id= "largebtn" onclick="">Ver solicitud firmada</button></td> 
+			   <td ><button id= "largebtn" onclick="">Ver carta de compromiso</button></td>  
+			  </tr> 
+			</table>
+			<br/>
+			<br/>
+			<div>
+				<button id= "" onclick="mostrarMensaje('Revisión completa')">Aceptar solicitud</button>
+				<button id= "" onclick="mostrarMensaje('Revisión completa')">No aceptar solicitud</button>
+				<button id= "" onclick="mostrarMensaje('Revisión completa')">Rechazar Solicitud</button>
+			</div>
+		<!--/form-->
+	</div>
+	<br/><br/>
+	<footer>
+	  <p>2008, Ministerio de Educación de Guatemala</p>
+	  <p>6a. Calle 1-87 zona 10, Guatemala, C.A. </p>
+	  <p>Teléfono: (502) 2411-9595</p>
+	</footer>
+</body>
+</html>

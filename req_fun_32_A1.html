@@ -9,32 +9,46 @@
   	<script src="js/jquery-1.12.4.js"></script>
   	<script src="js/jquery-ui.js"></script>
 	<script src="js/script.js"></script>
+	<script>
+	  $(function() {
+	    $("#datepicker").datepicker();
+		});
+	  </script>
 </head>
 <body>
 	<header>
 	</header>
 	<br/><br/>
-	<button id= "prueba" onclick="reDirect('menu.html')"><</button>
-	<br/><br/>
+	<button id= "prueba" onclick="reDirect('req_fun_32.html')"><</button>
 	<div align="center">
-		<b>Cambio de estado de certificación</b><br/><br/><br/>
+		<b>Ingresar Tema</b><br/><br/><br/>
 		<!--form action="/my-handling-form-page" method="post"-->
 			<table style="width:40%">
 			  <tr>
+			    <td>Nombre del Tema:</td>
+			    <td><input type="text" id="nombre"/></td> 
+			  </tr>
+			  <tr>
+			    <td>Descripción del Tema:</td>
+			    <td><textarea rows="4" cols="24" id="des"></textarea></td> 
+			  </tr>
+			  <tr>
+			    <td>Orden de Publicación:</td>
+			    <td><input type="text" id="orden"></td> 
+			  </tr>
+			  <tr>
+			    <td><br/></td><td></td>
+			  </tr>
+			  <tr>
+			    <td></td>
 			    <td>
-			    <button  id="largebtn" onclick="reDirect('req_fun_30_A2.html')">Anular una certificación</button>
-			    </td>
-			    <td>
-			    <button  id="largebtn" onclick="reDirect('req_fun_30_A2.html')">Suspender una certificación</button>
-			    </td>
-			    <td>
-			    <button  id="largebtn" onclick="reDirect('req_fun_30_A1.html')">Reactivar una certificación</button>
-			    </td>
+			    	<button onclick="mostrarMensaje('Tema Guardado')">Guardar</button>
+				</td> 
 			  </tr>
 			</table>
 		<!--/form-->
 	</div>
-	<br/><br/><br/><br/><br/>
+	<br/><br/><br/>
 	<footer>
 	  <p>2008, Ministerio de Educación de Guatemala</p>
 	  <p>6a. Calle 1-87 zona 10, Guatemala, C.A. </p>

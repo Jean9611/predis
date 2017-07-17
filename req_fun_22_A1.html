@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Requisito Funcional 10</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/styleMINEDUC.css">
+  	<link rel="stylesheet" href="css/jquery-ui.css">
+	<!--link rel="stylesheet" href="/resources/demos/style.css"-->
+  	<script src="js/jquery-1.12.4.js"></script>
+  	<script src="js/jquery-ui.js"></script>
+	<script src="js/script.js"></script>
+  <script>
+  $(function() {
+    $("#datepicker").datepicker();
+	});
+  </script>
+
+</head>
+<body>
+	<header>
+	</header>
+	<br/><br/>
+	<button id= "prueba" onclick="reDirect('req_fun_22.html')"><</button>
+	<div align="center">
+		<b>Entregar Documento</b><br/><br/>
+		<!--form action="/my-handling-form-page" method="post"-->
+			<table style="width:45%">
+			  <tr >
+			    <td >Código centro educativo:</td> 
+			    <td style="color:blue;">Código del centro educativo</td>  
+			  </tr>
+			  <tr >
+			    <td >Nombre del centro educativo:</td> 
+			    <td style="color:blue;">nombre del centro educativo</td>  
+			  </tr>
+			   <tr >
+			    <td >Departamento:</td> 
+			    <td style="color:blue;">Departamento</td> 
+			  </tr>
+			   <tr >
+			   <td >Municipio:</td> 
+			   <td style="color:blue;">Municipio</td>  
+			  </tr>
+			  <tr >
+			   <td >Opinion Técnica:</td> 
+			   <td style="color:blue;">Opinion...</td>  
+			  </tr> 
+			  <tr >
+			   <td >Número de Resolución:</td> 
+			   <td style="color:blue;"># de Resolución</td>  
+			  </tr> 
+			  <tr >
+			   <td >Fecha de Emision de Resolucion:</td> 
+			   <td style="color:blue;">Fecha</td>  
+			  </tr> 
+			  <tr >
+			   <td ><br/></td> 
+			  </tr> 
+			  <tr >
+			   <td >Nombre del archivo:</td> 
+			   <td><input type="file" name=""></td>  
+			  </tr> 
+			</table>
+			
+			<br/>
+			<br/>
+			<div>
+				<button id= "" onclick="mostrarMensaje('Documento entregado exitosamente')">Guardar</button>
+			</div>
+		<!--/form-->
+	</div>
+	<br/><br/>
+	<footer>
+	  <p>2008, Ministerio de Educación de Guatemala</p>
+	  <p>6a. Calle 1-87 zona 10, Guatemala, C.A. </p>
+	  <p>Teléfono: (502) 2411-9595</p>
+	</footer>
+</body>
+</html>

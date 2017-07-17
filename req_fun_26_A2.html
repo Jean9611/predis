@@ -9,32 +9,38 @@
   	<script src="js/jquery-1.12.4.js"></script>
   	<script src="js/jquery-ui.js"></script>
 	<script src="js/script.js"></script>
+	<script>
+	  $(function() {
+	    $("#datepicker").datepicker();
+		});
+	  </script>
 </head>
 <body>
 	<header>
 	</header>
 	<br/><br/>
-	<button id= "prueba" onclick="reDirect('menu.html')"><</button>
-	<br/><br/>
+	<button id= "prueba" onclick="reDirect('req_fun_26.html')"><</button>
 	<div align="center">
-		<b>Cambio de estado de certificación</b><br/><br/><br/>
+		<b>Analizar Evaluación</b><br/><br/><br/>
 		<!--form action="/my-handling-form-page" method="post"-->
 			<table style="width:40%">
 			  <tr>
+			    <td>Numero de Dictamen:</td>
+			    <td><input type="text"/></td> 
+			  </tr>
+			  <tr>
+			    <td><br/></td><td></td>
+			  </tr>
+			  <tr>
+			    <td></td>
 			    <td>
-			    <button  id="largebtn" onclick="reDirect('req_fun_30_A2.html')">Anular una certificación</button>
-			    </td>
-			    <td>
-			    <button  id="largebtn" onclick="reDirect('req_fun_30_A2.html')">Suspender una certificación</button>
-			    </td>
-			    <td>
-			    <button  id="largebtn" onclick="reDirect('req_fun_30_A1.html')">Reactivar una certificación</button>
-			    </td>
+			    	<button onclick="mostrarMensajeConfirmacion('Resultado de la evaluacion (positivo/negativo), desea emitir el dictamen?','Se generó dictamen e informe de evaluación')">Ingresar</button>
+				</td> 
 			  </tr>
 			</table>
 		<!--/form-->
 	</div>
-	<br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/>
 	<footer>
 	  <p>2008, Ministerio de Educación de Guatemala</p>
 	  <p>6a. Calle 1-87 zona 10, Guatemala, C.A. </p>

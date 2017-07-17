@@ -45,29 +45,46 @@
 			    <td>
 			    	<button onclick="habilitar()">Agregar Criterio</button>
 				</td> 
-			  </tr><tr><td><br/></td></tr>
-			  <tr>
-			    <td>Descripción del Criterio:</td>
-			    <td><input type="text" id="input1" disabled/></td> 
-			  </tr>
-			  <tr>
-			    <td>Redacción del criterio como hallazgo positivo:</td>
-			    <td><input type="text" id="input2" disabled/></td> 
-			  </tr>
-			  <tr>
-			    <td>Redacción del criterio como oportunidad de mejora:</td>
-			    <td><input type="text" id="input3" disabled/></td> 
-			  </tr>
-			  <tr>
-			    <td><br/></td><td></td>
-			  </tr>
-			  <tr>
-			    <td></td>
-			    <td>
-			    	<button onclick="mostrarMensaje('Directriz Guardada con Exito')">Guardar</button>
-				</td> 
 			  </tr>
 			</table>
+			<br/><br/>
+			<div id="divOculto" style="display:none">
+				<table>
+				  <tr>
+				    <td>Descripción del Criterio:</td>
+				    <td><input type="text" id="input1"/></td> 
+				  </tr>
+				  <tr>
+				    <td>Redacción del criterio como hallazgo positivo:</td>
+				    <td><input type="text" id="input2"/></td> 
+				  </tr>
+				  <tr>
+				    <td>Redacción del criterio como oportunidad de mejora:</td>
+				    <td><input type="text" id="input3"/></td> 
+				  </tr>
+				  <tr>
+				    <td><br/></td><td></td>
+				  </tr>
+				  <tr>
+				    <td></td>
+				    <td>
+				    	<button onclick="deshabilitar()">Guardar Criterio</button>
+					</td> 
+				  </tr>
+				</table>
+			</div>
+			<div id="divOculto2" style="display:none">
+				<table>
+				    <td><br/><br/><br/></td><td></td>
+				  </tr>
+				  <tr>
+				    <td></td>
+				    <td>
+				    	<button id="largebtn" onclick="mostrarMensaje3('Directriz guardada exitosamente')">Guardar datos de la directriz</button>
+					</td> 
+				  </tr>
+				</table>
+			</div>
 		<!--/form-->
 	</div>
 	<br/><br/><br/>

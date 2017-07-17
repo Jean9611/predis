@@ -1,8 +1,14 @@
 
-	header {
+	#headermenu {
 	    background-image: url('images/top1.png');
 		height: 180px;
        	background-size: 100%;
+	}	
+
+	header {
+	    background-image: url('images/header.png');
+		height: 75px;
+       	background-size: 70%;
 	}	
 
 	body {

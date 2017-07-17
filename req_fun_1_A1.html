@@ -26,7 +26,7 @@
 			<table style="width:40%">
 			  <tr>
 			    <td>Nombre del Evento:</td>
-			    <td><input type="text"/></td> 
+			    <td><input onchange="departamentos_req_fun_1()" type="text"/></td> 
 			  </tr>
 			  <tr>
 			    <td>Fecha:</td>
@@ -36,13 +36,17 @@
 			    <td>Observaciones:</td>
 			    <td><textarea rows="4" cols="24"></textarea></td> 
 			  </tr>
+			   <tr>
+			    <td>Número de invitados por departamento:</td>
+			    <td><input disabled type="number" id="No.departamentos"></td> 
+			  </tr>
 			  <tr>
 			    <td><br/></td><td></td>
 			  </tr>
 			  <tr>
 			    <td></td>
 			    <td>
-			    	<button onclick="mostrarMensaje('Registro de Invitados Guardado')">Guardar</button>
+			    	<button onclick="mostrarMensaje2('Registro de Invitados Guardado')">Guardar</button>
 				</td> 
 			  </tr>
 			</table>
