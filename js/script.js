@@ -70,6 +70,29 @@ function cargar_datos_req_fun_2_A2(){
 	$("#def").val("Definicion de la directriz...");
 }
 
+function mostrarDiv1(){
+	document.getElementById('none1').style.display ='inherit';
+	document.getElementById('none2').style.display ='none';
+	document.getElementById('completar_revision').disabled =false;
+	document.getElementById('anterior').disabled =false;
+}
+
+function mostrarDiv2(){
+	document.getElementById('none2').style.display ='inherit';
+}
+
+function guardarCriterio(){
+	document.getElementById('none2').style.display ='none';
+}
+
+
+function siguiente_directriz_req_fun_18(){
+	document.getElementById('directriz-2_req_fun_10').style.display ='inherit';
+	document.getElementById('directriz_requ_fun_10').style.display ='none';
+	document.getElementById('completar_revision').disabled =false;
+	document.getElementById('anterior').disabled =false;
+}
+
 function cargar_datos_req_fun_2_A22(){
 	document.getElementById("input1").disabled = false;
 	document.getElementById("input2").disabled = false;
@@ -176,7 +199,7 @@ function observaciones_req_fun_18(){
 }
 
 function cargar_datos_req_fun_19(){
-	var grupo = document.getElementById("dep");
+	var grupo = document.getElementById("depa");
 	var text = grupo.options[grupo.selectedIndex].value;
 	var text1 = $("#agregados").text();
 	if(text1 == ""){
