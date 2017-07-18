@@ -41,9 +41,10 @@
 			    <td>
 			    	<select onchange="cargar_datos_req_fun_2_A2()">
 					  <option value="">Seleccione un correlativo</option>
-					  <option value="">Correlativo 1</option>
-					  <option value="">Correlativo 2</option>
-					  <option value="">Correlativo 3</option>
+					  <option value="">1</option>
+					  <option value="">2</option>
+					  <option value="">3</option>
+					  <option value="">4</option>
 					</select>
 				</td> 
 				</td> 
@@ -105,12 +106,12 @@
 						<textarea rows="3" cols="35">Redaccion como oportunidad</textarea> 
 					</td>
 					<td>
-						<font COLOR="red" onclick="confirm('Seguro que desea eliminar el criterio?')">Eliminar Criterio</font>
+						<font COLOR="red" onclick="eliminar2A2()">Eliminar Criterio</font>
 					</td>
 				  </tr>
 				</table>
 				<br/>
-				<button onclick="">Guardar Criterios</button>
+				<button onclick="guardar2A2()">Guardar Criterios</button>
 				<button onclick="mostrarDiv2()">Agregar Criterio</button>
 				</div>
 			<br/><br/>
@@ -139,6 +140,9 @@
 			  </tr>
 			</table>
 			<br/>
+			</div>
+			<div id='none3' style="display:none">
+			<button id="largebtn" onclick="mostrarMensaje3('Directriz guardada exitosamente')">Guardar Datos de la Directriz</button>
 			</div>
 		<!--/form-->
 	</div>

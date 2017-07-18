@@ -74,22 +74,38 @@ function cargar_datos_req_fun_2_A3(){
 	$("#nombre").val("Directriz 1");
 	$("#def").val("Definicion de la directriz...");
 	$("#label").text("Criterio1, Criterio2, Criterio_x");
-
+	document.getElementById('none1').style.display ='inherit';
 }
 
 function mostrarDiv1(){
 	document.getElementById('none1').style.display ='inherit';
 	document.getElementById('none2').style.display ='none';
-	document.getElementById('completar_revision').disabled =false;
-	document.getElementById('anterior').disabled =false;
+	//document.getElementById('completar_revision').disabled =false;
+	//document.getElementById('anterior').disabled =false;
+}
+
+function eliminar2A2(){
+	var r = confirm('Seguro que desea eliminar el criterio?');
+	document.getElementById('none3').style.display ='inherit';
+	if (r == true) {
+		document.getElementById('none3').style.display ='inherit';
+	}else{
+		document.getElementById('none3').style.display ='inherit';
+	}
+}
+
+function guardar2A2(){
+	document.getElementById('none3').style.display ='inherit';
 }
 
 function mostrarDiv2(){
 	document.getElementById('none2').style.display ='inherit';
+	document.getElementById('none3').style.display ='inherit';
 }
 
 function guardarCriterio(){
 	document.getElementById('none2').style.display ='none';
+	document.getElementById('none3').style.display ='inherit';
 }
 
 
