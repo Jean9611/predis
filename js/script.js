@@ -70,6 +70,13 @@ function cargar_datos_req_fun_2_A2(){
 	$("#def").val("Definicion de la directriz...");
 }
 
+function cargar_datos_req_fun_2_A3(){
+	$("#nombre").val("Directriz 1");
+	$("#def").val("Definicion de la directriz...");
+	$("#label").text("Criterio1, Criterio2, Criterio_x");
+
+}
+
 function mostrarDiv1(){
 	document.getElementById('none1').style.display ='inherit';
 	document.getElementById('none2').style.display ='none';

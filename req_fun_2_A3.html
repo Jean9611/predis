@@ -28,12 +28,19 @@
 			<table style="width:40%">
 			  <tr>
 			    <td>Grupo al que pertenece:</td>
-			    <td><input type="text"/></td> 
+			    <td>
+			    	<select>
+					  <option value="">Seleccione un grupo</option>
+					  <option value="">Grupo 1</option>
+					  <option value="">Grupo 2</option>
+					  <option value="">Grupo 3</option>
+					</select>
+				</td> 
 			  </tr>
 			  <tr>
 			    <td>Correlativo dentro del Grupo:</td>
 			    <td>
-			    	<select onchange="cargar_datos_req_fun_2_A2()">
+			    	<select onchange="cargar_datos_req_fun_2_A3()">
 					  <option value="">Seleccione un correlativo</option>
 					  <option value="">Correlativo 1</option>
 					  <option value="">Correlativo 2</option>
@@ -43,17 +50,17 @@
 			  </tr>
 			  <tr>
 			    <td>Nombre de la Directriz:</td>
-			    <td><input type="text" id="nombre"/></td> 
+			    <td><input type="text" id="nombre" disabled="true" /></td> 
 			  </tr>
 			  <tr>
 			    <td>Definición:</td>
-			    <td><textarea rows="4" cols="24" id="def"></textarea></td> 
+			    <td><textarea rows="4" cols="24" id="def" disabled="true"></textarea></td> 
 			  </tr>
 			  <tr>
 			  <tr>
 			    <td>Criterios:</td>
 			    <td>
-			    	Criterio1, Criterio2, Criteriox
+			    	<label id="label"></label>
 				</td>
 			  <tr>
 			    <td><br/></td><td></td>
@@ -61,7 +68,7 @@
 			  <tr>
 			    <td></td>
 			    <td>
-			    	<button onclick="mostrarMensajeConfirmacion2('Seguro que quieres eliminar esta directriz?','Directriz eliminado')">Eliminar Directriz</button>
+			    	<button onclick="mostrarMensajeConfirmacion('Seguro que quieres eliminar esta directriz?','Directriz eliminado')">Eliminar Directriz</button>
 				</td> 
 			  </tr>
 			</table>
