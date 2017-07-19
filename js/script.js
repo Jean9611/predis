@@ -63,17 +63,26 @@ function cargar_datos_req_fun_1_A3(){
 	$("#No.departamentos").val("9");
 }
 
+/*
+
+ y plan de mejora
+
+pedir codigo de centro escolar en el reporte, desplegar encabezado y luego ir a la tabla
+*/
 function cargar_datos_req_fun_2_A2(){
 	document.getElementById("nombre").disabled = false;
 	document.getElementById("def").disabled = false;
-	$("#nombre").val("Directriz 1");
-	$("#def").val("Definicion de la directriz...");
+	$("#nombre").val("Administración del SGIC");
+	$("#def").val("Es la forma en que se identifican, planifican, gestionan, aplican y mejoran los procesos educativos.");
+}
+
+function carga_datos_reporte_analisis(){
+	document.getElementById('datos').style.display ='inherit';
 }
 
 function cargar_datos_req_fun_2_A3(){
-	$("#nombre").val("Directriz 1");
-	$("#def").val("Definicion de la directriz...");
-	$("#label").text("Criterio1, Criterio2, Criterio_x");
+	$("#nombre").val("Administración del SGIC");
+	$("#def").val("Es la forma en que se identifican, planifican, gestionan, aplican y mejoran los procesos educativos.");
 	document.getElementById('none1').style.display ='inherit';
 }
 
@@ -86,11 +95,12 @@ function mostrarDiv1(){
 
 function eliminar2A2(){
 	var r = confirm('Seguro que desea eliminar el criterio?');
-	document.getElementById('none3').style.display ='inherit';
 	if (r == true) {
 		document.getElementById('none3').style.display ='inherit';
-	}else{
-		document.getElementById('none3').style.display ='inherit';
+		$("#a").val("");
+		$("#b").val("");
+		$("#c").val("");
+
 	}
 }
 
@@ -108,13 +118,13 @@ function guardarCriterio(){
 	document.getElementById('none3').style.display ='inherit';
 }
 
-
+/*
 function siguiente_directriz_req_fun_18(){
 	document.getElementById('directriz-2_req_fun_10').style.display ='inherit';
 	document.getElementById('directriz_requ_fun_10').style.display ='none';
 	document.getElementById('completar_revision').disabled =false;
 	document.getElementById('anterior').disabled =false;
-}
+}*/
 
 function cargar_datos_req_fun_2_A22(){
 	document.getElementById("input1").disabled = false;
@@ -129,16 +139,32 @@ function cargar_datos_req_fun_3(){
 	var grupo = document.getElementById("grupo");
 	document.getElementById('directriz').style.display ='inherit';
 	$("#numero").text(grupo.options[grupo.selectedIndex].value);
-	$("#nombre").text("Administración del SGIC");
-	$("#definición").text("Es la forma que se identifica, planifican y gestionan los procesos educativos");
-
+	//$("#nombre").text("Administración del SGIC");
+	//$("#definición").text("Es la forma que se identifica, planifican y gestionan los procesos educativos");
 } 
 
+var estado3 = 1;
+function siguiente_directriz_req_fun_3(){
+	if((estado3 > 0)&&(estado3 < 9)){
+		estado3++;
+		document.getElementById('imagen').src = "css/images/1" + estado3 + ".png";
+	}
+}
+
+function anterior_directriz_req_fun_3(){
+	if((estado3 > 1)&&(estado3 < 10)){
+		estado3--;
+		document.getElementById('imagen').src = "css/images/1" + estado3 + ".png";
+	}
+}
+
+
+/*
 function siguiente_directriz_req_fun_3(){
 	document.getElementById('directriz-2').style.display ='inherit';
 	document.getElementById('directriz').style.display ='none';
 	document.getElementById('vista_previa').disabled =false;
-} 
+} */
 
 function cargar_datos_req_fun_4_A1(){
 	$("#codigo").text("AYCCE-00001-2017");
@@ -172,6 +198,25 @@ function cargar_datos_req_fun_7_A1(){
 	$("#codigo").val("0001");
 }
 
+function rf7_A1(){
+	var aceptacion = document.getElementById("rf71");
+	if ((aceptacion.options[aceptacion.selectedIndex].value)=="A") 
+		document.getElementById("depa").disabled = true;
+	else
+		document.getElementById("depa").disabled = false;
+}
+
+function cargar_datos_req_fun_7nuevo(){
+	var grupo = document.getElementById("depa");
+	var text = grupo.options[grupo.selectedIndex].text;
+	var text1 = $("#agregados").text();
+	if(text1 == ""){
+		$("#agregados").text(text);
+	}else{
+		$("#agregados").text(text1+", "+text);
+	}
+}
+
 function cargar_datos_req_fun_7_A2(){
 	document.getElementById("nombre").disabled = false;
 	document.getElementById("cui").disabled = false;
@@ -199,18 +244,28 @@ function cargar_datos_req_fun_11(){
   	$('#hora').val("6:00 p.m.");
 }
 
+var estado = 1;
 function siguiente_directriz_req_fun_18(){
-	document.getElementById('directriz-2_req_fun_10').style.display ='inherit';
+	if((estado > 0)&&(estado < 9)){
+		estado++;
+		document.getElementById('imagen').src = "css/images/" + estado + ".PNG";
+	}
+	
+	/*document.getElementById('directriz-2_req_fun_10').style.display ='inherit';
 	document.getElementById('directriz_requ_fun_10').style.display ='none';
 	document.getElementById('completar_revision').disabled =false;
-	document.getElementById('anterior').disabled =false;
+	document.getElementById('anterior').disabled =false;*/
 }
 
 function anterior_directriz_req_fun_18(){
-	document.getElementById('directriz_requ_fun_10').style.display ='inherit';
+	if((estado > 1)&&(estado < 10)){
+		estado--;
+		document.getElementById('imagen').src = "css/images/" + estado + ".PNG";
+	}
+	/*document.getElementById('directriz_requ_fun_10').style.display ='inherit';
 	document.getElementById('directriz-2_req_fun_10').style.display ='none';
 	document.getElementById('completar_revision').disabled =true;
-	document.getElementById('anterior').disabled =true;
+	document.getElementById('anterior').disabled =true;*/
 }
 
 function observaciones_req_fun_18(){
