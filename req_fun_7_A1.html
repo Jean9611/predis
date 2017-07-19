@@ -30,10 +30,10 @@
 			  <tr>
 			    <td>Perfil:</td>
 			    <td>
-			    	<select>
+			    	<select id="rf71" onchange="rf7_A1()">
 					  <option value="">Seleccione un Perfil</option>
 					  <option value="">Técnico</option>
-					  <option value="">Administrador</option>
+					  <option value="A">Administrador</option>
 					</select>
 				</td> 
 			  </tr>
@@ -44,7 +44,7 @@
 			  <tr>
 			    <td>Direcciones Departamentales:</td>
 			    <td>
-			    	<select onchange="cargar_datos_req_fun_7_A1()">
+			    	<select id = "depa" onchange="cargar_datos_req_fun_7_A1()">
 					  <option value="">Seleccione una dirección</option>
 					  <option value="">Alta Verapaz</option>
 					  <option value="">Baja Verapaz</option>
@@ -72,7 +72,12 @@
 					  <option value="">Totonicapan</option>
 					  <option value="">Zacapa</option>
 					</select>
+			     	<td ><button id="agregar" onclick="cargar_datos_req_fun_7nuevo()">+</button></td>
 				</td> 
+			  </tr>
+			  <tr>
+			  	<td></td>
+			  	  <td><label id="agregados" style="color:blue"></label><br></td>
 			  </tr>
 			  <tr>
 			    <td>Código:</td>

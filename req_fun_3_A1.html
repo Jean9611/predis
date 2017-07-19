@@ -21,7 +21,7 @@
 	</header>
 	<br/><br/>
 	
-	<button id= "prueba" onclick="reDirect('menu.html')"><</button>
+	<button id= "prueba" onclick="reDirect('req_fun_3.html')"><</button>
 	<div align="center">
 		<b>Definir puntos críticos para certificación y recertificación</b><br/><br/>
 		<!--form action="/my-handling-form-page" method="post"-->
@@ -43,118 +43,14 @@
 			    <td>Número de certificación:</td>
 			    <td><label id="numero"></label></td>
 			  </tr>
-			  <tr>
-			    <td>Directriz:</td>
-			    <td><label id="nombre"></label></td>
-			  </tr>
-			  <tr>
-			    <td>Definición:</td>
-			    <td><label id="definición"></label></td>
-			  </tr>
 			</table>
 			<br/>
 			<div id="directriz" style="display:none">
-				<table style="width:65%" border="2px">
-				  <tr style="background-color:#E6E6FA;" text-align="center">
-				  	<td>Criterios</td>
-				  	<td>Críterio</td>
-				  	<td>Condicional</td>
-				  </tr>
-				  <tr>
-					  	<td>a.  Cuenta con un procedimiento para la administración del Sistema de Garantía Interna de la Calidad implementado y en continua mejora.
-					  	</td>
-					  	<td>
-					  		<select>
-							<option value="S">Sí</option>
-							<option value="N">No</option>
-							</select>
-						</td>
-					  	<td>
-					  		<select>
-							 <option value="S">Sí</option>
-							 <option value="N">No</option>
-							</select>
-						</td>
-				  </tr>
-				  <tr>
-					  	<td>b.  Existe un equipo de administración del sistema que gestiona la calidad formado por representantes de la comunidad educativa.
-					  	</td>
-					  	<td>
-					  		<select>
-							<option value="S">Sí</option>
-							<option value="N">No</option>
-							</select>
-						</td>
-					  	<td>
-					  		<select>
-							 <option value="S">Sí</option>
-							 <option value="N">No</option>
-							</select>
-						</td>
-				  </tr>
-				   <tr>
-					  	<td>c.  Evalúa constantemente el Sistema de Garantía Interna de la Calidad y hace mejoras al mismo.
-					  	</td>
-					  	<td>
-					  		<select>
-							<option value="S">Sí</option>
-							<option value="N">No</option>
-							</select>
-						</td>
-					  	<td>
-					  		<select>
-							 <option value="S">Sí</option>
-							 <option value="N">No</option>
-							</select>
-						</td>
-				  </tr>
-				  
-				</table>
-			</div>
-			<div id="directriz-2" style="display:none">
-				<table style="width:65%" border="2px">
-				  <tr style="background-color:#E6E6FA;" valign="middle">
-				  	<td>Criterios</td>
-				  	<td>Críterio</td>
-				  	<td>Condicional</td>
-				  </tr>
-				  <tr>
-					  	<td>a.  Cuenta con un procedimiento para la administración del Sistema de Garantía Interna de la Calidad implementado y en continua mejora.
-					  	</td>
-					  	<td>
-					  		<select>
-							<option value="S">Sí</option>
-							<option value="N">No</option>
-							</select>
-						</td>
-					  	<td>
-					  		<select>
-							 <option value="S">Sí</option>
-							 <option value="N">No</option>
-							</select>
-						</td>
-				  </tr>
-				  <tr>
-					  	<td>b.  Existe un equipo de administración del sistema que gestiona la calidad formado por representantes de la comunidad educativa.
-					  	</td>
-					  	<td>
-					  		<select>
-							<option value="S">Sí</option>
-							<option value="N">No</option>
-							</select>
-						</td>
-					  	<td>
-					  		<select>
-							 <option value="S">Sí</option>
-							 <option value="N">No</option>
-							</select>
-						</td>
-				  </tr>
-				</table>
+				<img id="imagen" src="css/images/11.png" width="800px" >
 			</div>
 			<br/><br/>
 			<div align="center" style="width:55%">
-			<button id= "vista_previa" onclick="reDirect('req_fun_3_vista_previa.html')" disabled>Mostrar requisitos</button>
+			<button id= "vista_previa" onclick="reDirect('req_fun_3_vista_previa.html')">Mostrar requisitos</button>
 			<button id= "siguiente" onclick="siguiente_directriz_req_fun_3()">siguiente directriz</button>
 			</div>
 		<!--/form-->
