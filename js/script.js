@@ -260,7 +260,7 @@ function siguiente_directriz_req_fun_18(){
 function anterior_directriz_req_fun_18(){
 	if((estado > 1)&&(estado < 10)){
 		estado--;
-		document.getElementById('imagen').src = "css/images/" + estado + ".PNG";
+		document.getElementById('imagen').src = "css/images/" + estado + ".png";
 	}
 	/*document.getElementById('directriz_requ_fun_10').style.display ='inherit';
 	document.getElementById('directriz-2_req_fun_10').style.display ='none';
