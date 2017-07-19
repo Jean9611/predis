@@ -139,10 +139,10 @@ function cargar_datos_req_fun_3(){
 	var grupo = document.getElementById("grupo");
 	document.getElementById('directriz').style.display ='inherit';
 	$("#numero").text(grupo.options[grupo.selectedIndex].value);
-	//$("#nombre").text("Administración del SGIC");
-	//$("#definición").text("Es la forma que se identifica, planifican y gestionan los procesos educativos");
+	$("#nombre").text("Administración del SGIC");
+	$("#definición").text("Es la forma que se identifica, planifican y gestionan los procesos educativos");
 } 
-
+/*
 var estado3 = 1;
 function siguiente_directriz_req_fun_3(){
 	if((estado3 > 0)&&(estado3 < 9)){
@@ -157,14 +157,14 @@ function anterior_directriz_req_fun_3(){
 		document.getElementById('imagen').src = "css/images/1" + estado3 + ".png";
 	}
 }
+*/
 
 
-/*
 function siguiente_directriz_req_fun_3(){
 	document.getElementById('directriz-2').style.display ='inherit';
 	document.getElementById('directriz').style.display ='none';
 	document.getElementById('vista_previa').disabled =false;
-} */
+} 
 
 function cargar_datos_req_fun_4_A1(){
 	$("#codigo").text("AYCCE-00001-2017");
@@ -246,9 +246,9 @@ function cargar_datos_req_fun_11(){
 
 var estado = 1;
 function siguiente_directriz_req_fun_18(){
-	if((estado > 0)&&(estado < 9)){
+	if((estado > 0)&&(estado < 2)){
 		estado++;
-		document.getElementById('imagen').src = "css/images/" + estado + ".PNG";
+		document.getElementById('imagen').src = "css/images/" + estado + ".png";
 	}
 	
 	/*document.getElementById('directriz-2_req_fun_10').style.display ='inherit';
