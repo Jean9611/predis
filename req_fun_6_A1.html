@@ -9,6 +9,12 @@
   	<script src="js/jquery-1.12.4.js"></script>
   	<script src="js/jquery-ui.js"></script>
 	<script src="js/script.js"></script>
+  <script>
+  $(function() {
+    $("#datepicker1").datepicker();
+    $("#datepicker2").datepicker();
+	});
+  </script>
 </head>
 <body>
 	<header>
@@ -16,20 +22,28 @@
 	<br/><br/>
 	<button id= "prueba" onclick="reDirect('req_fun_6.html')"><</button>
 	<div align="center">
-		<b>Registro de Firmantes</b><br/><br/><br/>
+		<b>Registro de comité evaluador</b><br/><br/><br/>
 		<!--form action="/my-handling-form-page" method="post"-->
-			<table style="width:25%">
+			<table style="width:30%">
 			  <tr>
 			    <td>CUI:</td>
-			    <td><input type="text" id="cui"/></td> 
+			    <td><input type="text" id="cui" onchange="cargar61('#nombre')" /></td> 
 			  </tr>
 			  <tr>
 			    <td>Nombre:</td>
 			    <td><input type="text" id="nombre"/></td> 
 			  </tr>
 			  <tr>
-			    <td>Puesto:</td>
+			    <td>Puesto temporal:</td>
 			    <td><input type="text" id="puesto"/></td> 
+			  </tr>
+			  <tr>
+			    <td>Fecha de inicio:</td>
+			    <td><input type="text" id="datepicker1"></td> 
+			  </tr>
+			  <tr>
+			    <td>Fecha de fin:</td>
+			    <td><input type="text" id="datepicker2"></td> 
 			  </tr>
 			  <tr>
 			    <td><br/></td><td></td>

@@ -16,18 +16,18 @@
 	<br/><br/>
 	<button id= "prueba" onclick="reDirect('req_fun_7.html')"><</button>
 	<div align="center">
-		<b>Registro de Técnicos y Administradores</b><br/><br/><br/>
+		<b>Registro de técnicos y administradores</b><br/><br/><br/>
 		<!--form action="/my-handling-form-page" method="post"-->
 			<table style="width:35%">
+			  <tr>
+			    <td>CUI:</td>
+			    <td><input type="number" id="cui" onchange="cargar61('#nombre')"/></td> 
+			  </tr>
 			  <tr>
 			    <td>Nombre:</td>
 			    <td><input type="text" id="nombre"/></td> 
 			  </tr>
-			  <tr>
-			    <td>CUI:</td>
-			    <td><input type="number" id="cui"/></td> 
-			  </tr>
-			  <tr>
+			  <!--tr>
 			    <td>Perfil:</td>
 			    <td>
 			    	<select id="rf71" onchange="rf7_A1()">
@@ -36,13 +36,13 @@
 					  <option value="A">Administrador</option>
 					</select>
 				</td> 
-			  </tr>
+			  </tr-->
 			  <tr>
-			    <td>Correo Institucional:</td>
+			    <td>Correo institucional:</td>
 			    <td><input type="text" id="correo"/></td> 
 			  </tr>
 			  <tr>
-			    <td>Direcciones Departamentales:</td>
+			    <td>Direcciones departamentales:</td>
 			    <td>
 			    	<select id = "depa" onchange="cargar_datos_req_fun_7_A1()">
 					  <option value="">Seleccione una dirección</option>
@@ -60,9 +60,9 @@
 					  <option value="">Izabal</option>
 					  <option value="">Jalapa</option>
 					  <option value="">Jutiapa</option>
-					  <option value="">Peten</option>
+					  <option value="">Petén</option>
 					  <option value="">Quetzaltenango</option>
-					  <option value="">Quiche</option>
+					  <option value="">Quiché</option>
 					  <option value="">Retahuleu</option>
 					  <option value="">Sacatepequez</option>
 					  <option value="">Santa Rosa</option>
@@ -89,7 +89,7 @@
 			  <tr>
 			    <td></td>
 			    <td>
-			    	<button onclick="mostrarMensaje('Técnico o Administrador registrado')">Guardar Datos</button>
+			    	<button onclick="mostrarMensaje('Técnico o Administrador registrado')">Guardar datos</button>
 				</td> 
 			  </tr>
 			</table>

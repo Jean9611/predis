@@ -16,20 +16,27 @@
 	<br/><br/>
 	<button id= "prueba" onclick="reDirect('req_fun_6.html')"><</button>
 	<div align="center">
-		<b>Elimanar Firmante</b><br/><br/><br/>
+		<b>Eliminar Registro de comité evaluador</b><br/><br/><br/>
 		<!--form action="/my-handling-form-page" method="post"-->
 			<table style="width:25%">
 			  <tr>
 			    <td>CUI:</td>
-			    <td><input type="text" id="cui" onchange="cargar_datos_req_fun_6_A2()"/></td> 
+			    <td><input type="number" id="cui" onchange="cargar_datos_req_fun_6_A2()"/></td> 
 			  </tr>
 			  <tr>
 			    <td>Nombre:</td>
 			    <td><input type="text" id="nombre" disabled/></td> 
 			  </tr>
 			  <tr>
-			    <td>Puesto:</td>
-			    <td><input type="text" id="puesto"/ disabled></td> 
+			    <td>Puesto temporal:</td>
+			    <td><input type="text" id="puesto" disabled/></td> 
+			  </tr>
+			    <td>Fecha de inicio:</td>
+			    <td><input type="text" id="datepicker1" disabled></td> 
+			  </tr>
+			  <tr>
+			    <td>Fecha de fin:</td>
+			    <td><input type="text" id="datepicker2" disabled/></td> 
 			  </tr>
 			  <tr>
 			    <td><br/></td><td></td>
