@@ -104,6 +104,48 @@ function eliminar2A2(){
 	}
 }
 
+var bandera = 1;
+function modificar1(){
+	document.getElementById('div1').style.display ='inherit';
+	$("#i1").val("Evento a modificar");
+	$("#datepicker").val("15/08/2017");
+	$("#i3").val("");
+	$("#i4").val(10);
+	bandera = 0;
+}
+
+function display1(){
+	document.getElementById('div1').style.display ='inherit';
+	$("#i1").val("");
+	$("#datepicker").val("");
+	$("#i3").val("");
+	$("#i4").val("");
+	bandera = 1;
+}
+
+function eliminar1(){
+	var r = confirm('Seguro que desea eliminar el registro?');
+	if (r == true) {
+		$("#l1").text("");
+		$("#l2").text("");
+		$("#l3").text("");
+		$("#f1").text("");
+		$("#f2").text("");
+	}
+}
+
+function agregar1(){
+	document.getElementById('div1').style.display ='none';
+	if(bandera){
+		$("#l11").text("Evento nuevo");
+		$("#l12").text("15/08/2017");
+		$("#l13").text("Observacion nueva");
+		$("#l13").text("10");
+		$("#f11").text("Eliminar registro");
+		$("#f12").text("Modificar registro");
+	}
+}
+
 function guardar2A2(){
 	document.getElementById('none3').style.display ='inherit';
 }
@@ -190,8 +232,23 @@ function cargar_datos_req_fun_5(){
 function cargar_datos_req_fun_6(){
 	document.getElementById("nombre").disabled = false;
 	document.getElementById("puesto").disabled = false;
+	document.getElementById("datepicker1").disabled = false;
+	document.getElementById("datepicker2").disabled = false;
 	$("#nombre").val("Manuel Alfonzo Tobillas");
 	$("#puesto").val("Tecnico");
+	$("#datepicker1").val("20/07/2017");
+	$("#datepicker2").val("24/07/2017");
+}
+
+function cargar61(id){
+	$(id).val("Manuel Alfonzo Tobillas");
+}
+
+function cargar_datos_req_fun_6_A2(){
+	$("#nombre").val("Manuel Alfonzo Tobillas");
+	$("#puesto").val("Tecnico");
+	$("#datepicker1").val("20/07/2017");
+	$("#datepicker2").val("24/07/2017");
 }
 
 function cargar_datos_req_fun_7_A1(){
@@ -221,20 +278,20 @@ function cargar_datos_req_fun_7_A2(){
 	document.getElementById("nombre").disabled = false;
 	document.getElementById("cui").disabled = false;
 	document.getElementById("correo").disabled = false;
-	document.getElementById("select1").disabled = false;
-	document.getElementById("select2").disabled = false;
+	//document.getElementById("select1").disabled = false;
+	document.getElementById("depa").disabled = false;
 	$("#nombre").val("Manuel Alfonzo Tobillas");
 	$("#cui").val("2950 13000 0101");
 	$("#correo").val("tobillas@gmail.com");
-	$('#select1').children('option:first').text('Técnico');
-	$('#select2').children('option:first').text('Guatemala Sur');
+	//$('#select1').children('option:first').text('Técnico');
+	$('#depa').children('option:first').text('Guatemala Sur');
 }
 
 function cargar_datos_req_fun_7_A3(){
 	$("#nombre").val("Manuel Alfonzo Tobillas");
 	$("#cui").val("2950 13000 0101");
 	$("#correo").val("tobillas@gmail.com");
-	$('#select1').children('option:first').text('Técnico');
+	//$('#select1').children('option:first').text('Técnico');
 	$('#select2').children('option:first').text('Guatemala Sur');
 }
 
@@ -328,7 +385,7 @@ function cargar_datos_req_fun_20_A2(){
 	document.getElementById("nombre").disabled = false;
 	document.getElementById("cui").disabled = false;
 	document.getElementById("correo").disabled = false;
-	document.getElementById("depto").disabled = false;
+	document.getElementById("depa").disabled = false;
 	document.getElementById("cel").disabled = false;
 	$("#nombre").val("Manuel Alfonzo Tobillas");
 	$("#cui").val("2950 13000 0101");

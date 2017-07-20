@@ -9,6 +9,11 @@
   	<script src="js/jquery-1.12.4.js"></script>
   	<script src="js/jquery-ui.js"></script>
 	<script src="js/script.js"></script>
+	<script>
+	  $(function() {
+	    $("#datepicker").datepicker();
+		});
+	  </script>
 </head>
 <body>
 	<header>
@@ -17,21 +22,82 @@
 	<button id= "prueba" onclick="reDirect('menu.html')"><</button>
 	<br/><br/>
 	<div align="center">
-		<b>Registro de Invitados</b><br/><br/><br/>
+		<b>Registro de invitados</b><br/><br/><br/>
 		<!--form action="/my-handling-form-page" method="post"-->
-			<table style="width:40%">
-			  <tr>
-			    <td>
-			    <button  id="" onclick="reDirect('req_fun_1_A1.html')">Nuevo</button>
-			    </td>
-			    <td>
-			    <button  id="" onclick="reDirect('req_fun_1_A2.html')">Modificar</button>
-			    </td>
-			    <td>
-			    <button  id="" onclick="reDirect('req_fun_1_A3.html')">Eliminar</button>
-			    </td>
+			<table id="tabla" style="width:65%" rules="all">
+			 <tr align="center"> 
+			    <td style="color:#00BFFF;">Nombre del Evento</td> 
+			    <td style="color:#00BFFF;">Fecha</td> 
+			    <td style="color:#00BFFF;">Observaciones</td> 
+			    <td style="color:#00BFFF;">Número de invitados por departamento</td> 
+			  </tr>
+			   <tr align="center"> 
+			    <td style="color:blue;">Evento 1</td> 
+			    <td style="color:blue;">15/08/2017</td> 
+			    <td style="color:blue;"></td> 
+			    <td style="color:blue;">10</td> 
+			    <td><font COLOR="blue" onclick="modificar1()">Modificar registro</font></td>
+			    <td><font COLOR="red" onclick="eliminar1()">Eliminar registro</font></td>
+			  </tr>
+			   <tr align="center">
+			    <td style="color:blue;">Evento 2</td> 
+			    <td style="color:blue;">19/08/2017</td> 
+			    <td style="color:blue;"></td> 
+			    <td style="color:blue;">15</td>
+			    <td><font COLOR="blue" onclick="modificar1()">Modificar registro</font></td>
+			    <td><font COLOR="red" onclick="eliminar1()">Eliminar registro</font></td> 
+			  </tr>
+			   <tr align="center"> 
+			    <td style="color:blue;"><label id="l1">Evento 3</label></td> 
+			    <td style="color:blue;"><label id="l2">22/08/2017</label></td> 
+			    <td style="color:blue;"></td> 
+			    <td style="color:blue;"><label id="l3">12</label></td> 
+			    <td><font id="f2" COLOR="blue" onclick="modificar1()">Modificar registro</font></td>
+			    <td><font id="f1" COLOR="red" onclick="eliminar1()">Eliminar registro</font></td>
+			  </tr>
+			   <tr align="center"> 
+			    <td style="color:blue;"><label id="l11"></label></td> 
+			    <td style="color:blue;"><label id="l12"></label></td> 
+			    <td style="color:blue;"></td> 
+			    <td style="color:blue;"><label id="l13"></label></td> 
+			    <td><font id="f12" COLOR="blue" onclick="modificar1()"></font></td>
+			    <td><font id="f11" COLOR="red" onclick="eliminar1()"></font></td>
 			  </tr>
 			</table>
+			<br/>
+
+			<button  id="" onclick="display1()">Nuevo</button>
+			<button  id="largeb" onclick="display1()">generar archivo Excel</button>
+			<br/><br/>
+			<div id="div1" align="center" style="display: none;">
+				<table style="width:40%">
+				  <tr>
+				    <td>Nombre del evento:</td>
+				    <td><input type="text" id="i1" /></td> 
+				  </tr>
+				  <tr>
+				    <td>Fecha:</td>
+				    <td><input type="text" id="datepicker"></td> 
+				  </tr>
+				  <tr>
+				    <td>Observaciones:</td>
+				    <td><textarea rows="4" cols="24" id="i3"></textarea></td> 
+				  </tr>
+				   <tr>
+				    <td>Número de invitados por departamento:</td>
+				    <td><input type="number" id="i4"></td> 
+				  </tr>
+				  <tr>
+				    <td><br/></td>
+				  </tr>
+				  <tr>
+				    <td></td>
+				    <td>
+				    	<button onclick="agregar1()">Guardar</button>
+					</td> 
+				  </tr>
+				</table>
+			</div>
 		<!--/form-->
 	</div>
 	<br/><br/><br/><br/><br/>
