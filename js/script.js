@@ -44,6 +44,7 @@ function deshabilitar(){
 	$("#input1").val("");
 	$("#input2").val("");
 	$("#input3").val("");
+	mostrarDiv1();
 }
 
 function departamentos_req_fun_1(){
@@ -88,7 +89,6 @@ function cargar_datos_req_fun_2_A3(){
 
 function mostrarDiv1(){
 	document.getElementById('none1').style.display ='inherit';
-	document.getElementById('none2').style.display ='none';
 	//document.getElementById('completar_revision').disabled =false;
 	//document.getElementById('anterior').disabled =false;
 }
@@ -104,6 +104,16 @@ function eliminar2A2(){
 	}
 }
 
+function eliminar2A22(){
+	var r = confirm('Seguro que desea eliminar el criterio?');
+	if (r == true) {
+		$("#a").val("");
+		$("#b").val("");
+		$("#c").val("");
+
+	}
+}
+
 var bandera = 1;
 function modificar1(){
 	document.getElementById('div1').style.display ='inherit';
@@ -111,6 +121,20 @@ function modificar1(){
 	$("#datepicker").val("15/08/2017");
 	$("#i3").val("");
 	$("#i4").val(10);
+	bandera = 0;
+}
+
+var bandera = 1;
+function eliminar11(){
+	document.getElementById("i12").disabled = true;
+	document.getElementById("datepicker2").disabled = true;
+	document.getElementById("i32").disabled = true;
+	document.getElementById("i42").disabled = true;
+	document.getElementById('div2').style.display ='inherit';
+	$("#i12").val("Evento a modificar");
+	$("#datepicker2").val("15/08/2017");
+	$("#i32").val("");
+	$("#i42").val(10);
 	bandera = 0;
 }
 
@@ -131,6 +155,7 @@ function eliminar1(){
 		$("#l3").text("");
 		$("#f1").text("");
 		$("#f2").text("");
+		reDirect("menu.html");
 	}
 }
 
@@ -178,11 +203,11 @@ function cargar_datos_req_fun_2_A22(){
 }
 
 function cargar_datos_req_fun_3(){
-	var grupo = document.getElementById("grupo");
+	//var grupo = document.getElementById("grupo");
 	document.getElementById('directriz').style.display ='inherit';
-	$("#numero").text(grupo.options[grupo.selectedIndex].value);
+	/*$("#numero").text(grupo.options[grupo.selectedIndex].value);
 	$("#nombre").text("Administración del SGIC");
-	$("#definición").text("Es la forma que se identifica, planifican y gestionan los procesos educativos");
+	$("#definición").text("Es la forma que se identifica, planifican y gestionan los procesos educativos");*/
 } 
 /*
 var estado3 = 1;
@@ -278,8 +303,8 @@ function cargar_datos_req_fun_7_A2(){
 	document.getElementById("nombre").disabled = false;
 	document.getElementById("cui").disabled = false;
 	document.getElementById("correo").disabled = false;
-	//document.getElementById("select1").disabled = false;
-	document.getElementById("depa").disabled = false;
+	document.getElementById("rf71").disabled = false;
+	//document.getElementById("depa").disabled = false;
 	$("#nombre").val("Manuel Alfonzo Tobillas");
 	$("#cui").val("2950 13000 0101");
 	$("#correo").val("tobillas@gmail.com");

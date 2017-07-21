@@ -1,8 +1,10 @@
 
 	#headermenu {
-	    background-image: url('images/top1.png');
-		height: 180px;
-       	background-size: 100%;
+	    background-image: url('images/h.jpg');
+		height: 100px;
+       	background-size: 18%;
+	  	background-repeat: no-repeat;
+		background-position: center center;
 	}	
 
 	header {

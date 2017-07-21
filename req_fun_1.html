@@ -24,7 +24,7 @@
 	<div align="center">
 		<b>Registro de invitados</b><br/><br/><br/>
 		<!--form action="/my-handling-form-page" method="post"-->
-			<table id="tabla" style="width:65%" rules="all">
+			<table id="tabla" style="width:55%" rules="all">
 			 <tr align="center"> 
 			    <td style="color:#00BFFF;">Nombre del Evento</td> 
 			    <td style="color:#00BFFF;">Fecha</td> 
@@ -36,32 +36,32 @@
 			    <td style="color:blue;">15/08/2017</td> 
 			    <td style="color:blue;"></td> 
 			    <td style="color:blue;">10</td> 
-			    <td><font COLOR="blue" onclick="modificar1()">Modificar registro</font></td>
-			    <td><font COLOR="red" onclick="eliminar1()">Eliminar registro</font></td>
+			    <td><u><font COLOR="blue" onclick="modificar1()">Modificar</font></u></td>
+			    <td><u><font COLOR="red" onclick="eliminar11()">Eliminar</font></u></td>
 			  </tr>
 			   <tr align="center">
 			    <td style="color:blue;">Evento 2</td> 
 			    <td style="color:blue;">19/08/2017</td> 
 			    <td style="color:blue;"></td> 
 			    <td style="color:blue;">15</td>
-			    <td><font COLOR="blue" onclick="modificar1()">Modificar registro</font></td>
-			    <td><font COLOR="red" onclick="eliminar1()">Eliminar registro</font></td> 
+			    <td><u><font COLOR="blue" onclick="modificar1()">Modificar</font></u></td>
+			    <td><u><font COLOR="red" onclick="eliminar11()">Eliminar</font></u></td> 
 			  </tr>
 			   <tr align="center"> 
 			    <td style="color:blue;"><label id="l1">Evento 3</label></td> 
 			    <td style="color:blue;"><label id="l2">22/08/2017</label></td> 
 			    <td style="color:blue;"></td> 
 			    <td style="color:blue;"><label id="l3">12</label></td> 
-			    <td><font id="f2" COLOR="blue" onclick="modificar1()">Modificar registro</font></td>
-			    <td><font id="f1" COLOR="red" onclick="eliminar1()">Eliminar registro</font></td>
+			    <td><u><font id="f2" COLOR="blue" onclick="modificar1()">Modificar</font></u></td>
+			    <td><u><font id="f1" COLOR="red" onclick="eliminar11()">Eliminar</font></u></td>
 			  </tr>
 			   <tr align="center"> 
 			    <td style="color:blue;"><label id="l11"></label></td> 
 			    <td style="color:blue;"><label id="l12"></label></td> 
 			    <td style="color:blue;"></td> 
 			    <td style="color:blue;"><label id="l13"></label></td> 
-			    <td><font id="f12" COLOR="blue" onclick="modificar1()"></font></td>
-			    <td><font id="f11" COLOR="red" onclick="eliminar1()"></font></td>
+			    <td><u><font id="f12" COLOR="blue" onclick="modificar1()"></font></u></td>
+			    <td><u><font id="f11" COLOR="red" onclick="eliminar11()"></font></u></td>
 			  </tr>
 			</table>
 			<br/>
@@ -93,7 +93,36 @@
 				  <tr>
 				    <td></td>
 				    <td>
-				    	<button onclick="agregar1()">Guardar</button>
+				    	<button id="boton" onclick="agregar1()">Guardar</button>
+					</td> 
+				  </tr>
+				</table>
+			</div>
+			<div id="div2" align="center" style="display: none;">
+				<table style="width:40%">
+				  <tr>
+				    <td>Nombre del evento:</td>
+				    <td><input type="text" id="i12" /></td> 
+				  </tr>
+				  <tr>
+				    <td>Fecha:</td>
+				    <td><input type="text" id="datepicker2"></td> 
+				  </tr>
+				  <tr>
+				    <td>Observaciones:</td>
+				    <td><textarea rows="4" cols="24" id="i32"></textarea></td> 
+				  </tr>
+				   <tr>
+				    <td>Número de invitados por departamento:</td>
+				    <td><input type="number" id="i42"></td> 
+				  </tr>
+				  <tr>
+				    <td><br/></td>
+				  </tr>
+				  <tr>
+				    <td></td>
+				    <td>
+				    	<button id="boton" onclick="eliminar1()">Eliminar</button>
 					</td> 
 				  </tr>
 				</table>
