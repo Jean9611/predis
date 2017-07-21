@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Requisito Funcional 10</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/styleMINEDUC.css">
+  	<link rel="stylesheet" href="css/jquery-ui.css">
+	<!--link rel="stylesheet" href="/resources/demos/style.css"-->
+  	<script src="js/jquery-1.12.4.js"></script>
+  	<script src="js/jquery-ui.js"></script>
+	<script src="js/script.js"></script>
+  <script>
+  $(function() {
+    $("#datepicker").datepicker();
+	});
+  </script>
+
+</head>
+<body>
+	<header>
+	</header>
+	<br/><br/>
+	<button id= "prueba" onclick="reDirect('menu.html')"><</button>
+	<div align="center">
+		<b>Consulta y reimpresión de documentos</b><br/><br/>
+		<!--form action="/my-handling-form-page" method="post"-->
+			<table style="width:50%">
+			  <tr>
+			    <td>Código del centro educativo:</td>
+			    <td>
+			    	<select onchange="mostrarDiv1()">
+					  <option value="">Seleccione el código de CE</option>
+					  <option value="">16-04-3356-42</option>
+					  <option value="">16-04-1250-42</option>
+					  <option value="">16-04-8621-43</option>
+					</select>
+				</td> 
+			  </tr>
+		</table>
+	</div>
+	<br/><br/>
+	<div id="none1" align="center" style="display: none">
+		<b>Registrar participación en taller</b><br/><br/>
+		<!--form action="/my-handling-form-page" method="post"-->
+			<table id="tabla" style="width:60%" rules="all">
+			 <tr align="center">
+			    <td></td> 
+			    <td style="color:#00BFFF;">Nombre de evento AYCCE </td> 
+			    <td style="color:#00BFFF;">Tipo de documento</td> 
+			    <td style="color:#00BFFF;">Código de documento</td> 
+			    <td style="color:#00BFFF;">Fecha de emisión</td> 
+			  </tr>
+			   <tr align="center">
+			    <td ><a href="req_fun_extra_A1.html" style="color:blue;">Seleccionar</a></td>  
+			    <td style="color:blue;">AYCCE-00003-2017</td> 
+			    <td style="color:blue;">Dictamen</td> 
+			    <td style="color:blue;">10101</td> 
+			    <td style="color:blue;">24/08/2016</td> 
+			  </tr>
+			   <tr align="center">
+			    <td ><a href="req_fun_extra_A1.html" style="color:blue;">Seleccionar</a></td> 
+			    <td style="color:blue;">AYCCE-00003-2017</td> 
+			    <td style="color:blue;">Dictamen</td> 
+			    <td style="color:blue;">10102</td> 
+			    <td style="color:blue;">8/12/2016</td> 
+			  </tr>
+			   <tr align="center">
+			    <td ><a href="req_fun_extra_A1.html" style="color:blue;">Seleccionar</a></td> 
+			    <td style="color:blue;">AYCCE-0000-2017</td> 
+			    <td style="color:blue;">Resolución emitida</td> 
+			    <td style="color:blue;">10103</td> 
+			    <td style="color:blue;">5/05/2017</td> 
+			  </tr>
+			   <tr align="center">
+			    <td ><a href="req_fun_extra_A1.html" style="color:blue;">Seleccionar</a></td> 
+			    <td style="color:blue;">AYCCE-0000-2017</td> 
+			    <td style="color:blue;">Dictamen</td> 
+			    <td style="color:blue;">10104</td> 
+			    <td style="color:blue;">10/05/2017</td> 
+			  </tr>
+			</table>
+		<!--/form-->
+	</div>
+	<br/><br/>
+	<footer>
+	  <p>2008, Ministerio de Educación de Guatemala</p>
+	  <p>6a. Calle 1-87 zona 10, Guatemala, C.A. </p>
+	  <p>Teléfono: (502) 2411-9595</p>
+	</footer>
+</body>
+</html>
