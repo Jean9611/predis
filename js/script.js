@@ -155,7 +155,6 @@ function eliminar1(){
 		$("#l3").text("");
 		$("#f1").text("");
 		$("#f2").text("");
-		reDirect("menu.html");
 	}
 }
 
@@ -166,8 +165,8 @@ function agregar1(){
 		$("#l12").text("15/08/2017");
 		$("#l13").text("Observacion nueva");
 		$("#l13").text("10");
-		$("#f11").text("Eliminar registro");
-		$("#f12").text("Modificar registro");
+		$("#f11").text("Eliminar");
+		$("#f12").text("Modificar");
 	}
 }
 
