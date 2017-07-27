@@ -89,7 +89,7 @@
 	}
 
 	#largebtn {
-		width: 310px;
+		width: 340px;
 		height: 32px;
 	}
 
@@ -103,6 +103,7 @@
 	#subbtn {
 	    background-color: #0040FF;
 		width: 200px;
+		height: 35px;
 		border-radius: 0px;
 	    font-size: 12px;
 	}
