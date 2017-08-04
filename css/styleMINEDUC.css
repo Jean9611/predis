@@ -94,8 +94,8 @@
 	}
 
 	#menubtn {
-		width: 100px;
-		height: 40px;
+		width: 185px;
+		height: 31px;
 		border-radius: 0px;
 	    font-size: 12px;
 	}
@@ -103,7 +103,7 @@
 	#subbtn {
 	    background-color: #0040FF;
 		width: 200px;
-		height: 35px;
+		height: 31px;
 		border-radius: 0px;
 	    font-size: 12px;
 	}
